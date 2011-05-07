@@ -28,17 +28,34 @@ echo<<<HTML
       <form>
         <input type="text" value="" id="camelize"
       </form>
+      <div id="result"></div>
     </div>
   </body>
 </html>
 
 <script type="text/javascript">
   $(function(){
+    var pretext = "begin typing...";
+    $("#camelize").val(pretext);
+
+    $("#camelize").focus(function(){
+      if($(this).val() == pretext){
+        $(this).val("");
+      }
+    }).blur(function(){
+      if($(this).val().replace(/\s+/, "") == ""){
+        $(this).val(pretext);
+      }
+    });
     
-  
+    
+
+    $("#camelize").keyup(function(){
+      $("#result").html(camelize($(this).val()));
+    });
   });
   
-  function camelize(){
+  function camelize(selector){
     
   }
 </script>
