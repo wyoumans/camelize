@@ -65,8 +65,11 @@ echo<<<SCRIPTS
         });
       });
   
-      function camelize(selector){
-        return selector + "()";
+      function camelize( s ) {
+        s = s.trim( s );
+        return ( /\S[A-Z]/.test( s ) ) ?
+        s.replace( /(.)([A-Z])/g, function(t,a,b) { return a + ' ' + b.toLowerCase(); } ) :
+        s.replace( /( )([a-z])/g, function(t,a,b) { return b.toUpperCase(); } );
       }
     </script>
 

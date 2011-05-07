@@ -1,7 +1,8 @@
 
 /*
  Color Scheme:
-
+  Teal: #51CBEE
+  Greys: #555, #777, #999
 */
 
 html,body{margin:0;padding:0;text-align: center;}
@@ -19,7 +20,6 @@ a:hover{
 body{
   background-color: #FFF;
   background-image: url('background.jpg');
-  background-position: 0 0;
   color: #555;
   font-family: Georgia, Times, serif;
   font-size: 12px;
@@ -40,6 +40,7 @@ body{
   -webkit-border-radius: 5px;
   -khtml-border-radius: 5px;
   position: relative;
+  box-shadow: 3px 3px 3px #555;
   -moz-box-shadow: 3px 3px 3px #555;
   -webkit-box-shadow: 3px 3px 3px #555;
 }
@@ -83,6 +84,10 @@ body{
   -moz-box-shadow:inset 3px 3px 3px #555;
   -webkit-box-shadow:inset 3px 3px 3px #555;
   box-shadow:inset 3px 3px 3px #555;
+  font-family: "Courier New", Courier, mono;
+  font-size: 30px;
+  line-height: 33px;
+  padding: 20px 0;
 }
 
 a#question{
