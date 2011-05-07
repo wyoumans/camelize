@@ -1,0 +1,68 @@
+
+/*
+ Color Scheme:
+
+*/
+
+html,body{margin:0;padding:0;text-align: center;}
+p, h1, h2, h3, h4, a, li, ul, ol, span, table, form, div{ text-align: left; }
+
+*:focus{
+  border: 0;
+}
+
+body{
+  background-color: #fff;
+  background-image: url('background.jpg');
+  background-position: 0 0;
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: normal;
+  margin: 20px 0 5px;
+  color: #046380;
+}
+
+h1{
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-size: 17px;
+}
+
+a:link, a:visited{
+  text-decoration: none;
+  color: #046380;
+}
+
+a:hover{
+  color: #91CFEF;
+}
+
+a img{
+  border: 0;
+}
+
+p{
+  margin: 10px 0 15px 0;
+}
+
+.clear{
+  clear: both;
+}
+
+ul li{
+  list-style: disc;
+  list-style-position: inside;
+}
+
+#content{
+  width: 600px;
+  margin: 20px auto;
+}
