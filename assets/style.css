@@ -7,8 +7,13 @@
 html,body{margin:0;padding:0;text-align: center;}
 p, h1, h2, h3, h4, a, li, ul, ol, span, table, form, div{ text-align: left; }
 
-*:focus{
-  border: 0;
+a:link, a:active, a:visited{
+  color: #51CBEE;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 body{
@@ -30,8 +35,7 @@ body{
   margin: 100px auto;
   background-color: #777;
   color: #FFF;
-  padding: 10px;
-  font-weight: bold;
+  padding: 10px 10px 0 10px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -khtml-border-radius: 5px;
@@ -79,4 +83,12 @@ body{
   -moz-box-shadow:inset 3px 3px 3px #555;
   -webkit-box-shadow:inset 3px 3px 3px #555;
   box-shadow:inset 3px 3px 3px #555;
+}
+
+a#question{
+  float: right;
+}
+
+#footer{
+  margin: 5px 0;
 }

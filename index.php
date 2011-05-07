@@ -1,14 +1,20 @@
 <?php
 
+$host = 'camelize';
+if(isset($_SERVER['HTTP_HOST'])){
+  $host = $_SERVER['HTTP_HOST'];
+}
+
+$year = date("Y");
+
 echo<<<HTML
 
 <html> 
   <head> 
-    <title>William Youmans | Web Developer, World Traveler</title> 
+    <title>Camelize: The free camelcase text convertor</title> 
     <meta charset="utf-8" /> 
-    <meta name="keywords" content="William Youmans Salt Lake City Utah Web Development Design CSS HTML PHP freelance photoshop inkscape gimp illustrator cheap free reasonable solution ninja crane klanoma web services"> 
-    <meta name="google-site-verification" content="Muk7w0OzK25unpvJS-Zu6SVz9d6nMMmvDeDm7aVeeCI" /> 
-    <meta name="description" content="William Youmans"> 
+    <meta name="keywords" content="Camelize, CamelCase, NerdCase, HumpCase, FunctionCase, Free, Text, Converter"> 
+    <meta name="description" content="A free tool for converting text string to camelcase."> 
     <meta name="author" content="William Youmans is a freelance web developer living, working, and loving Salt Lake City, Utah."> 
     <meta name="ROBOTS" content="ALL">
 
@@ -29,36 +35,65 @@ echo<<<HTML
         <input type="text" value="" id="camelize"
       </form>
       <div id="result"></div>
+      <div id="footer">
+        &copy $year <a href="http://www.klanoma.com">Klanoma Web Services</a>
+        <a id="question" href="http://en.wikipedia.org/wiki/CamelCase">What is This?</a>
+      </div>
     </div>
+
+HTML;
+
+
+echo<<<SCRIPTS
+    <script type="text/javascript">
+      $(function(){
+        var pretext = "begin typing...";
+        $("#camelize").val(pretext);
+
+        $("#camelize").focus(function(){
+          if($(this).val() == pretext){
+            $(this).val("");
+          }
+        }).blur(function(){
+          if($(this).val().replace(/\s+/, "") == ""){
+            $(this).val(pretext);
+          }
+        });
+
+        $("#camelize").keyup(function(){
+          $("#result").html(camelize($(this).val()));
+        });
+      });
+  
+      function camelize(selector){
+        return selector + "()";
+      }
+    </script>
+
+SCRIPTS;
+
+if(!preg_match("/local/", $host)){
+  echo<<<GA
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-11130262-12']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+GA;
+}
+
+echo<<<HTML
   </body>
 </html>
-
-<script type="text/javascript">
-  $(function(){
-    var pretext = "begin typing...";
-    $("#camelize").val(pretext);
-
-    $("#camelize").focus(function(){
-      if($(this).val() == pretext){
-        $(this).val("");
-      }
-    }).blur(function(){
-      if($(this).val().replace(/\s+/, "") == ""){
-        $(this).val(pretext);
-      }
-    });
-    
-    
-
-    $("#camelize").keyup(function(){
-      $("#result").html(camelize($(this).val()));
-    });
-  });
-  
-  function camelize(selector){
-    
-  }
-</script>
 
 HTML;
 
