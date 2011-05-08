@@ -30,6 +30,9 @@ echo<<<HTML
     
   </head> 
   <body>
+    <div id="logo">
+      <img src="assets/logo.png" alt="Camelize">
+    </div>
     <div id="content">
       <form>
         <input type="text" value="" id="camelize"
