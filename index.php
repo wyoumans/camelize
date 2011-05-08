@@ -11,7 +11,7 @@ echo<<<HTML
 
 <html> 
   <head> 
-    <title>Camelize: The free camelcase text convertor</title> 
+    <title>Camelize: The free camelcase text converter</title> 
     <meta charset="utf-8" /> 
     <meta name="keywords" content="Camelize, CamelCase, NerdCase, HumpCase, FunctionCase, Free, Text, Converter"> 
     <meta name="description" content="A free tool for converting text string to camelcase."> 
