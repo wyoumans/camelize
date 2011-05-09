@@ -1,0 +1,1 @@
+Camelize is a free tool for converting a text string to camelcase.
