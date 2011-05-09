@@ -8,11 +8,11 @@ if(isset($_SERVER['HTTP_HOST'])){
 $year = date("Y");
 
 echo<<<HTML
-
-<html> 
+<!DOCTYPE html>
+<html>
   <head> 
     <title>Camelize: The free camelcase text converter</title> 
-    <meta charset="utf-8" /> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="keywords" content="Camelize, CamelCase, NerdCase, HumpCase, FunctionCase, Free, Text, Converter"> 
     <meta name="description" content="A free tool for converting text string to camelcase."> 
     <meta name="author" content="William Youmans is a freelance web developer living, working, and loving Salt Lake City, Utah."> 
@@ -34,12 +34,12 @@ echo<<<HTML
       <img src="assets/logo.png" alt="Camelize">
     </div>
     <div id="content">
-      <form>
-        <input type="text" value="" id="camelize"
+      <form method="post" action="index.php">
+        <input type="text" value="" id="camelize">
       </form>
       <div id="result"></div>
       <div id="footer">
-        &copy $year <a href="http://www.klanoma.com">Klanoma Web Services</a>
+        &copy; $year <a href="http://www.klanoma.com">Klanoma Web Services</a>
         <a id="question" href="http://en.wikipedia.org/wiki/CamelCase">What is This?</a>
       </div>
     </div>
