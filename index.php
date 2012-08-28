@@ -15,7 +15,7 @@ $year = date("Y");
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="keywords" content="Camelize, CamelCase, NerdCase, HumpCase, FunctionCase, Free, Text, Converter">
     <meta name="description" content="A free tool for converting text string to camelcase.">
-    <meta name="author" content="William Youmans is a freelance web developer living, working, and loving Salt Lake City, Utah.">
+    <meta name="author" content="William Youmans">
     <meta name="ROBOTS" content="ALL">
 
     <!-- Javascript -->
