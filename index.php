@@ -19,7 +19,7 @@ $year = date("Y");
     <meta name="ROBOTS" content="ALL">
 
     <!-- Javascript -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/reset.css" media="screen" />
