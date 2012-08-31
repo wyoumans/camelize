@@ -59,11 +59,8 @@ $year = date("Y");
           }
         });
 
-        $("#camelize").keyup(function(){
-          $("#result").html(camelize($(this).val()));
-        });
         $("#camelize").bind("input propertychange", function() {
-           console.log($(this).val());
+          $("#result").html(camelize($(this).val()));
         });
       });
 
