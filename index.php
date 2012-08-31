@@ -11,10 +11,10 @@ $year = date("Y");
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Camelize: The free camelcase text converter</title>
+    <title>Camelize: The free instant camelcase text converter</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="keywords" content="Camelize, CamelCase, NerdCase, HumpCase, FunctionCase, Free, Text, Converter">
-    <meta name="description" content="A free tool for converting text string to camelcase.">
+    <meta name="description" content="A free tool for instantly converting text string to camelcase.">
     <meta name="author" content="William Youmans">
     <meta name="ROBOTS" content="ALL">
 
