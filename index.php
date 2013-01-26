@@ -45,16 +45,16 @@ $year = date("Y");
     </div>
 
     <script type="text/javascript">
-      $(function(){
+      $(function() {
         var pretext = "begin typing...";
         $("#camelize").val(pretext);
 
-        $("#camelize").focus(function(){
-          if($(this).val() == pretext){
+        $("#camelize").focus(function() {
+          if($(this).val() == pretext) {
             $(this).val("");
           }
-        }).blur(function(){
-          if($(this).val().replace(/\s+/, "") == ""){
+        }).blur(function() {
+          if($(this).val().replace(/\s+/, "") == "") {
             $(this).val(pretext);
           }
         });
@@ -64,26 +64,29 @@ $year = date("Y");
         });
       });
 
-      function camelize( s ) {
-        return ( /\S[A-Z]/.test( s ) ) ?
-        s.replace( /(.)([A-Z])/g, function(t,a,b) { return a + ' ' + b.toLowerCase(); } ) :
-        s.replace( /( )([a-z])/g, function(t,a,b) { return b.toUpperCase(); } );
+      function camelize(s) {
+        return(/\S[A-Z]/.test(s)) ? s.replace(/(.)([A-Z])/g, function(t, a, b) {
+          return a + ' ' + b.toLowerCase();
+        }) : s.replace(/( )([a-z])/g, function(t, a, b) {
+          return b.toUpperCase();
+        });
       }
     </script>
 
     <?php if(!preg_match("/local/", $host) && !preg_match("/lan/", $host)): ?>
       <script type="text/javascript">
-
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-11130262-12']);
         _gaq.push(['_trackPageview']);
 
         (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          var ga = document.createElement('script');
+          ga.type = 'text/javascript';
+          ga.async = true;
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
         })();
-
       </script>
 
     <?php endif ?>
