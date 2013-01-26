@@ -4,22 +4,22 @@ $host = 'camelize';
 if(isset($_SERVER['HTTP_HOST'])){
   $host = $_SERVER['HTTP_HOST'];
 }
-
+date_default_timezone_set('America/Denver');
 $year = date("Y");
 
 ?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Camelize: The free camelcase text converter</title>
+    <title>Camelize: The free instant camelcase text converter</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="keywords" content="Camelize, CamelCase, NerdCase, HumpCase, FunctionCase, Free, Text, Converter">
-    <meta name="description" content="A free tool for converting text string to camelcase.">
-    <meta name="author" content="William Youmans is a freelance web developer living, working, and loving Salt Lake City, Utah.">
+    <meta name="description" content="A free tool for instantly converting text string to camelcase.">
+    <meta name="author" content="William Youmans">
     <meta name="ROBOTS" content="ALL">
 
     <!-- Javascript -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/reset.css" media="screen" />
@@ -59,7 +59,7 @@ $year = date("Y");
           }
         });
 
-        $("#camelize").keyup(function(){
+        $("#camelize").bind("input propertychange", function() {
           $("#result").html(camelize($(this).val()));
         });
       });
@@ -71,22 +71,22 @@ $year = date("Y");
       }
     </script>
 
-<?php if(!preg_match("/local/", $host)): ?>
-    <script type="text/javascript">
+    <?php if(!preg_match("/local/", $host) && !preg_match("/lan/", $host)): ?>
+      <script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-11130262-12']);
-      _gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-11130262-12']);
+        _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
-    </script>
+      </script>
 
-<?php endif ?>
+    <?php endif ?>
 
   </body>
 </html>
