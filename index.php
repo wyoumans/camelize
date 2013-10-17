@@ -73,7 +73,7 @@ $year = date("Y");
       }
     </script>
 
-    <?php if(!preg_match("/local/", $host) && !preg_match("/lan/", $host)): ?>
+    <?php if(!preg_match("/dev/", $host) && !preg_match("/lan/", $host)): ?>
       <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-11130262-12']);

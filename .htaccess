@@ -5,7 +5,7 @@ RewriteEngine On
 RewriteRule \.git - [F,L]
 
 RewriteBase /
-RewriteCond %{HTTP_HOST} !^.*(camelize.local)|(mute.local).*$ [NC]
+RewriteCond %{HTTP_HOST} !^.*(camelize.dev).*$ [NC]
 RewriteCond %{HTTP_HOST} !^camelize.com$ [NC]
 RewriteRule ^(.*)$ http://camelize.com/$1 [L,R=301]
 RewriteCond %{THE_REQUEST} ^.*/index\.php
