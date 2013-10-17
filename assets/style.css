@@ -4,19 +4,19 @@
   Greys: #555, #777, #999
 */
 
-html,body{margin:0;padding:0;text-align: center;}
-p, h1, h2, h3, h4, a, li, ul, ol, span, table, form, div{ text-align: left; }
+html,body { margin:0;padding:0;text-align: center; }
+p, h1, h2, h3, h4, a, li, ul, ol, span, table, form, div { text-align: left; }
 
-a:link, a:active, a:visited{
+a:link, a:active, a:visited {
   color: #51CBEE;
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-body{
+body {
   background-color: #FFF;
   background-image: url('background.jpg');
   color: #555;
@@ -25,11 +25,11 @@ body{
   line-height: 16px;
 }
 
-.clear{
+.clear {
   clear: both;
 }
 
-#content{
+#content {
   width: 600px;
   margin: 0 auto 100px auto;
   background-color: #777;
@@ -44,7 +44,7 @@ body{
   -webkit-box-shadow: 3px 3px 3px #555;
 }
 
-#camelize{
+#camelize {
   width: 99%;
   height: 45px;
   border: 3px solid rgba(81, 203, 238, 0);
@@ -64,14 +64,14 @@ body{
   -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
 }
 
-#camelize:focus{
+#camelize:focus {
   border: 3px solid rgba(81, 203, 238, 1);
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
 
-#result{
+#result {
   min-height: 200px;
   /* IE Min Height Hack */
   height:auto !important;
@@ -98,26 +98,26 @@ body{
   white-space: -o-pre-wrap; /* Opera 7 */
 }
 
-a#question{
+a#question {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-#footer{
+#footer {
   margin: 5px 0;
   height: 20px;
   position: relative;
 }
 
-#logo{
+#logo {
   position: relative;
   width: 600px;
   margin: 100px auto 0 auto;
   height: 60px;
 }
 
-#logo img{
+#logo img {
   position: absolute;
   bottom: 0;
   right: 0;

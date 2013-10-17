@@ -50,11 +50,11 @@ $year = date("Y");
         $("#camelize").val(pretext);
 
         $("#camelize").focus(function() {
-          if($(this).val() == pretext) {
+          if ($(this).val() == pretext) {
             $(this).val("");
           }
         }).blur(function() {
-          if($(this).val().replace(/\s+/, "") == "") {
+          if ($(this).val().replace(/\s+/, "") == "") {
             $(this).val(pretext);
           }
         });
@@ -65,7 +65,7 @@ $year = date("Y");
       });
 
       function camelize(s) {
-        return(/\S[A-Z]/.test(s)) ? s.replace(/(.)([A-Z])/g, function(t, a, b) {
+        return (/\S[A-Z]/.test(s)) ? s.replace(/(.)([A-Z])/g, function(t, a, b) {
           return a + ' ' + b.toLowerCase();
         }) : s.replace(/( )([a-z])/g, function(t, a, b) {
           return b.toUpperCase();

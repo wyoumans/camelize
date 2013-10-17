@@ -1,1 +1,2 @@
-# camelize.com: The free instant camelcase text converter
+# camelize.com
+### The free instant camelcase text converter
