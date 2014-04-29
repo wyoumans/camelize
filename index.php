@@ -17,6 +17,7 @@ $year = date("Y");
     <meta name="description" content="A free tool for instantly converting text string to camelcase.">
     <meta name="author" content="William Youmans">
     <meta name="ROBOTS" content="ALL">
+    <meta name="google-site-verification" content="8XJt8uvOIuJwxKWm9pIOPGsqazPAHFmOH9ajnV1KB2M" />
 
     <!-- Javascript -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
