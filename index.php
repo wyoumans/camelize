@@ -23,7 +23,7 @@ $year = date("Y");
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/reset.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="assets/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css?20140428" media="screen" />
 
     <!--Favicon -->
     <link rel="shortcut icon" href="favicon.ico">
