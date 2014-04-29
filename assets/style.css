@@ -4,8 +4,15 @@
   Greys: #555, #777, #999
 */
 
-html,body { margin:0;padding:0;text-align: center; }
-p, h1, h2, h3, h4, a, li, ul, ol, span, table, form, div { text-align: left; }
+html,body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+p, h1, h2, h3, h4, a, li, ul, ol, span, table, form, div {
+  text-align: left;
+}
 
 a:link, a:active, a:visited {
   color: #51CBEE;
@@ -47,6 +54,7 @@ body {
 #camelize {
   width: 99%;
   height: 45px;
+  padding: 0;
   border: 3px solid rgba(81, 203, 238, 0);
   color: #555;
   font-family: Georgia, Times, serif;
