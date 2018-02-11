@@ -40,7 +40,7 @@ $year = date("Y");
       </form>
       <div id="result"></div>
       <div id="footer">
-        &copy; <?php echo $year ?> <a href="http://www.williamyoumans.com">William Youmans</a>
+        &copy; <?php echo $year ?> <a href="https://www.williamyoumans.com">William Youmans</a>
         <a id="question" href="http://en.wikipedia.org/wiki/CamelCase">What is This?</a>
       </div>
     </div>
