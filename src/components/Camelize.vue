@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'camelize',
+  name: 'Camelize',
 
   data() {
     return {
