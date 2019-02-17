@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'Camelize',
+  name: 'camelize',
 
   data() {
     return {
@@ -24,7 +24,11 @@ export default {
 
   computed: {
     camelizedMessage() {
-      return this.message.split(' ').join('_');
+      // https://ourcodeworld.com/articles/read/608/how-to-camelize-and-decamelize-strings-in-javascript
+      return this.message.replace(/^([A-Z])|[\s-_]+(\w)/g, (match, p1, p2) => {
+          if (p2) return p2.toUpperCase();
+          return p1.toLowerCase();
+      });
     }
   }
 }

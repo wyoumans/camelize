@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Camelize/>
+    <camelize/>
   </div>
 </template>
 
@@ -9,8 +9,9 @@ import Camelize from './components/Camelize.vue'
 
 export default {
   name: 'app',
+
   components: {
-    Camelize
+    'camelize': Camelize
   }
 }
 </script>
