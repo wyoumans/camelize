@@ -11,7 +11,7 @@
           placeholder="Begin typing..."
           class="appearance-none rounded block text-lg w-full py-2 px-3 text-blue-dark leading-tight focus:outline-none focus:shadow-outline"
         >
-        <div class="rounded p-20 my-2 bg-blue-dark text-3xl text-blue-lighter font-mono text-center leading-loose" style="word-break: break-word;">
+        <div class="rounded p-20 my-2 bg-blue-dark text-3xl text-blue-lighter font-mono text-center leading-loose" style="min-height: 220px; word-break: break-word;">
           {{ camelizedMessage }}
         </div>
 
