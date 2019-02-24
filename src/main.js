@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
-import VueAnalytics from 'vue-analytics'
+import VueAnalytics from 'vue-analytics';
 import './main.css';
 
 Vue.config.productionTip = false;
@@ -11,4 +11,4 @@ Vue.use(VueAnalytics, {
 
 new Vue({
   render: h => h(App),
-}).$mount('#app')
+}).$mount('#app');

@@ -1,29 +1,21 @@
-const tailwindcss = require("tailwindcss");
-const autoprefixer = require("autoprefixer");
-const purgecss = require("@fullhuman/postcss-purgecss");
-
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-  }
-}
-
 module.exports = {
   plugins: [
-    tailwindcss("./tailwind.js"),
-    purgecss({
-      content: [
-        "./public/**/*.html",
-        "./src/**/*.vue"
-      ],
-      extractors: [{
-        extractor: TailwindExtractor,
-        extensions: ['vue', 'html']
-      }]
-    }),
-    autoprefixer({
-      add: true,
-      grid: true
-    })
+    require('tailwindcss')('./tailwind.js'),
+    require('autoprefixer'),
+    ...process.env.NODE_ENV === 'production' ? [
+      require('@fullhuman/postcss-purgecss')({
+        content: ['./src/**/*.vue', './public/**/*.html'],
+        extractors: [
+          {
+            extractor: class {
+              static extract(content) {
+                return content.match(/[a-zA-Z0-9-:_/]+/g) || [];
+              }
+            },
+            extensions: ['vue', 'html'],
+          },
+        ],
+      })
+    ] : [],
   ]
-};
+}

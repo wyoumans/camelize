@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center content-center p-8 h-screen">
+  <div class="flex flex-col justify-center items-center content-center p-8 min-h-screen">
     <div class="w-full md:w-3/4 lg:w-2/3 flex flex-col">
 
       <h1 class="font-light text-blue-darker text-right -mb-1 pr-2">Camelize</h1>
