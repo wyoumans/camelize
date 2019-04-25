@@ -17,11 +17,13 @@
 
         <div class="flex flex-col md:flex-row md:justify-between px-2 text-center md:text-left leading-loose md:leading-normal">
           <small class="font-light text-white">
-            &copy;{{ year }} <a href="https://www.williamyoumans.com" target="_blank" class="text-blue-light hover:text-blue-lighter no-underline">William Youmans</a>
+            &copy;{{ year }} <a href="https://www.forefrontsoftware.com" target="_blank" class="text-blue-light hover:text-blue-lighter no-underline">Forefront Software</a>
           </small>
-
+          <small class="font-light text-white">
+            <a href="https://www.ctosumo.com" target="_blank" class="text-blue-light hover:text-blue-lighter no-underline">Need Tech Consulting? Try CTO Sumo!</a>
+          </small>
           <small class="font-light">
-            <a href="http://en.wikipedia.org/wiki/CamelCase" targe="_blank" class="text-blue-light hover:text-blue-lighter no-underline">What is this?</a>
+            <a href="http://en.wikipedia.org/wiki/CamelCase" target="_blank" class="text-blue-light hover:text-blue-lighter no-underline">What is this?</a>
           </small>
         </div>
       </div>
