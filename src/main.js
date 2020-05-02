@@ -6,9 +6,9 @@ import "./main.css";
 Vue.config.productionTip = false;
 
 Vue.use(VueAnalytics, {
-  id: "UA-11130262-12"
+  id: "UA-11130262-12",
 });
 
 new Vue({
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");
