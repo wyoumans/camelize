@@ -12,10 +12,10 @@
           type="text"
           v-model.trim="message"
           placeholder="Begin typing..."
-          class="block w-full px-3 py-2 text-lg leading-tight text-blue-600 rounded appearance-none focus:outline-none focus:shadow-outline"
+          class="block w-full px-3 py-2 text-lg leading-tight text-blue-500 rounded appearance-none focus:outline-none focus:shadow-outline"
         />
         <div
-          class="p-20 my-2 font-mono text-3xl leading-loose text-center text-blue-200 bg-blue-600 rounded"
+          class="p-20 my-2 font-mono text-3xl leading-loose text-center text-blue-100 bg-blue-500 rounded"
           style="min-height: 220px; word-break: break-word;"
         >
           {{ camelizedMessage }}
@@ -29,7 +29,7 @@
             <a
               href="https://www.forefrontsoftware.com"
               target="_blank"
-              class="text-blue-400 no-underline hover:text-blue-200"
+              class="text-blue-300 no-underline hover:text-blue-200"
               >Forefront Software</a
             >
           </small>
@@ -37,7 +37,7 @@
             <a
               href="https://www.ctosumo.com"
               target="_blank"
-              class="text-blue-400 no-underline hover:text-blue-200"
+              class="text-blue-300 no-underline hover:text-blue-200"
               >Need Tech Consulting? Try CTO Sumo!</a
             >
           </small>
@@ -45,7 +45,7 @@
             <a
               href="http://en.wikipedia.org/wiki/CamelCase"
               target="_blank"
-              class="text-blue-400 no-underline hover:text-blue-200"
+              class="text-blue-300 no-underline hover:text-blue-200"
               >What is this?</a
             >
           </small>

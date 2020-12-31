@@ -1,24 +1,14 @@
 <template>
-  <div id="app">
-    <camelize />
-  </div>
+  <camelize />
 </template>
 
 <script>
-import Camelize from "./components/Camelize.vue";
-import { page } from "vue-analytics";
+import Camelize from './components/Camelize.vue'
 
 export default {
-  name: "app",
-
+  name: 'App',
   components: {
-    camelize: Camelize
-  },
-
-  methods: {
-    track() {
-      page("/");
-    }
+    Camelize
   }
-};
+}
 </script>
